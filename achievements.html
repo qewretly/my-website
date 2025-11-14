@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои достижения - Иван Карнаухов</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/achievements.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Иван Карнаухов</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="practice.html" class="nav-link">Практика</a>
+                <a href="coursework.html" class="nav-link">Курсовая</a>
+                <a href="#" class="nav-link active">Достижения</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="achievements-container">
+        <section class="achievements-header">
+            <h1>Мои достижения</h1>
+            <p class="achievements-subtitle">Сертификаты об обучении</p>
+        </section>
+
+        <!-- Filter tabs -->
+        <section class="filter-section">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Все достижения</button>
+                <button class="filter-tab" data-filter="certificates">Сертификаты</button>
+            </div>
+        </section>
+
+        <!-- Achievements Grid -->
+        <section class="achievements-grid">
+            <!-- Stepik Сертификаты -->
+            <div class="achievement-card" data-category="certificates">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">📚</div>
+                    <div class="certificate-badge">Stepik</div>
+                </div>
+                <h3>Сертификат Stepik</h3>
+                <p class="achievement-type">Сертификат об обучении</p>
+                <p class="achievement-date">2025</p>
+                <div class="achievement-status verified">Сертифицирован</div>
+                <button class="view-certificate" data-file="avords/степик1.png">
+                    Посмотреть сертификат
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="certificates">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">💻</div>
+                    <div class="certificate-badge">Stepik</div>
+                </div>
+                <h3>Сертификат Stepik</h3>
+                <p class="achievement-type">Сертификат об обучении</p>
+                <p class="achievement-date">2025</p>
+                <div class="achievement-status verified">Сертифицирован</div>
+                <button class="view-certificate" data-file="avords/степик2.png">
+                    Посмотреть сертификат
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal для просмотра сертификатов -->
+    <div class="modal" id="certificateModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <iframe id="certificateViewer" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Email: ivanvkarnaukhov@gmail.com</p>
+                    <p>Телефон: +79999192807</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="image/Telegram logo (fotter).svg" alt="Telegram">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="image/Whatsapp logo (fotter).svg" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-nav">
+                        <li><a href="practice.html">Практика</a></li>
+                        <li><a href="coursework.html">Курсовая</a></li>
+                        <li><a href="achievements.html">Достижения</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Иван Карнаухов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/achievements.js"></script>
+</body>
+
+</html>

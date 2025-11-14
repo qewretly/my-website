@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иван Карнаухов - Портфолио</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Иван Карнаухов</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link active">Главная</a>
+                <a href="practice.html" class="nav-link">Практика</a>
+                <a href="coursework.html" class="nav-link">Курсовая</a>
+                <a href="achievements.html" class="nav-link">Достижения</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Привет! Я <span class="highlight">Иван Карнаухов</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Студент 3 курса Московского колледжа транспорта при РУТ МИИТ
+                </p>
+                <p class="hero-description">
+                    Увлекаюсь веб-разработкой и созданием современных решений
+                </p>
+                <div class="hero-buttons">
+                    <a href="#info-about" class="btn btn-primary">Обо мне</a>
+                    <a href="contacts.html" class="btn btn-secondary">Связаться</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-slider">
+                    <div class="slider-container">
+                        <img src="image/фото карусель 1.png" alt="Фото 1" class="slide active">
+                        <img src="image/фото карусель 2.png" alt="Фото 2" class="slide">
+                        <img src="image/фото карусель 3.png" alt="Фото 3" class="slide">
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev" aria-label="Предыдущее фото">&lt;</button>
+                        <button class="next" aria-label="Следующее фото">&gt;</button>
+                    </div>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Мои навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-card frontend">
+                    <div class="skill-content">
+                        <h3>Frontend разработка</h3>
+                        <p>Владею HTML, CSS, JavaScript для создания пользовательских интерфейсов.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card backend">
+                    <div class="skill-content">
+                        <h3>Python Backend разработка</h3>
+                        <p>Специализируюсь на backend-разработке с использованием Python и Django.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-about" id="info-about">
+        <div class="container">
+            <div class="info-card">
+                <div class="info-card-content">
+                    <h2 class="info-title">Немного информации обо мне</h2>
+                    <div class="info-text">
+                        <h3>Иван Карнаухов</h3>
+                        <p>Я увлечённый человек с ярко выраженным интересом к IT-сфере. Активно изучаю программирование, владею языками Python, HTML, CSS и JavaScript, а также продолжаю расширять свои знания в области разработки. В свободное время сочетаю
+                            отдых с обучением, решая задачи и экспериментируя с новыми технологиями.</p>
+                        <p>Параллельно увлекаюсь спортом — играю в волейбол, баскетбол и футбол, что помогает поддерживать баланс между физической активностью и интеллектуальным развитием. Стремлюсь к карьерному росту в сфере информационных технологий и
+                            открыт для новых возможностей.</p>
+                        <p>Активно веду <a href="https://github.com/qewretly" target="_blank" style="color: var(--primary-color);">GitHub</a>, во время практики проявил себя как компетентный специалист. В настоящее время работаю удалённо в компании ООО «ВСМ
+                            Сервис».
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Email: ivanvkarnaukhov@gmail.com</p>
+                    <p>Телефон: +79999192807</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="image/Telegram logo (fotter).svg" alt="Telegram">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="image/Whatsapp logo (fotter).svg" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-nav">
+                        <li><a href="practice.html">Практика</a></li>
+                        <li><a href="coursework.html">Курсовая</a></li>
+                        <li><a href="achievements.html">Достижения</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Тестирование</h3>
+                    <ul class="footer-nav">
+                        <li><a href="tests/unit-tests.html">Модульные тесты</a></li>
+                        <li><a href="tests/functional-tests.html">Функциональные тесты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Иван Карнаухов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

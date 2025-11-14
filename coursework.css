@@ -1,0 +1,343 @@
+/* Стили курсовой работы - Строгий дизайн для вневедомственной охраны */
+
+.coursework-container {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+
+/* Заголовок - упрощенный */
+
+.coursework-header {
+    background: var(--card-bg);
+    border-bottom: 2px solid var(--primary-color);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-title {
+    margin-bottom: 2rem;
+}
+
+.title-line {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.title-subtitle {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.header-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.meta-chip {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.chip-icon {
+    font-size: 1.2rem;
+}
+
+
+/* Навигационные карточки - строгие */
+
+.navigation-cards {
+    padding: 60px 0;
+    background: var(--bg-color);
+}
+
+.card-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.nav-card {
+    background: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-card:hover {
+    border-color: var(--accent-color);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.nav-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.nav-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.card-status {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card-status.completed {
+    background: var(--success-color);
+    color: white;
+}
+
+.card-status.in-progress {
+    background: var(--warning-color);
+    color: white;
+}
+
+
+/* Основной контент */
+
+.coursework-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+}
+
+.content-section {
+    margin-bottom: 4rem;
+    background: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 3rem;
+}
+
+.section-header {
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-number {
+    background: var(--primary-color);
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* Диаграммы - простые контейнеры */
+
+.diagram-container,
+.decomposition-container {
+    margin-bottom: 2rem;
+}
+
+.diagram-image {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.diagram-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.section-description {
+    margin-top: 2rem;
+}
+
+.section-description h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.section-description p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.key-features {
+    background: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.key-features h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.key-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-features li {
+    color: var(--text-secondary);
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.key-features li::before {
+    content: "▶";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+
+/* UML диаграммы - сетка */
+
+.uml-container {
+    margin-bottom: 3rem;
+}
+
+.uml-diagrams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.uml-diagram-item {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.uml-diagram-item h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.diagram-description {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+
+/* Адаптивность */
+
+@media (max-width: 768px) {
+    .title-line {
+        font-size: 2.5rem;
+    }
+    .title-subtitle {
+        font-size: 1.2rem;
+    }
+    .header-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    .content-section {
+        padding: 2rem;
+    }
+    .section-header h2 {
+        font-size: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    .uml-diagrams-grid {
+        grid-template-columns: 1fr;
+    }
+    .diagram-image {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .coursework-header {
+        padding: 40px 0;
+    }
+    .title-line {
+        font-size: 2rem;
+    }
+    .title-subtitle {
+        font-size: 1rem;
+    }
+    .content-section {
+        padding: 1.5rem;
+    }
+    .section-number {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    .key-features {
+        padding: 1rem;
+    }
+    .uml-diagram-item {
+        padding: 1rem;
+    }
+}
